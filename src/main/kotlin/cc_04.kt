@@ -4,5 +4,8 @@
  */
 
 fun main(args: Array<String>) {
-
+    for(i in 1..26){
+        val ic = i + 64
+        println("$i: ${ic.toChar()}")
+    }
 }
