@@ -24,4 +24,9 @@ internal class TestCC09 {
         val reversed: String = firstReverse("abcd")
         assertEquals("dcba", reversed)
     }
+    @Test
+    fun testFirstReverseTestInput() {
+        val reversed: String = firstReverse("Hello World and Coders")
+        assertEquals("sredoC dna dlroW olleH", reversed)
+    }
 }

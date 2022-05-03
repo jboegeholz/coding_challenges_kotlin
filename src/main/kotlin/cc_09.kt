@@ -9,19 +9,9 @@
  */
 
 fun firstReverse(s: String): String {
-    return if (s.length == 1) {
-        s
-    } else if (s.length == 2) {
-        "" + s[1] + s[0]
-    } else if (s.length == 3) {
-        "" + s[2] + s[1] + s[0]
-    } else if (s.length == 4) {
-        var retStr = ""
-        for (i in s.length-1 downTo 0){
-            retStr += s[i]
-        }
-        retStr
-    } else {
-        ""
+    var retStr = ""
+    for (i in s.length-1 downTo 0){
+        retStr += s[i]
     }
+    return retStr
 }
