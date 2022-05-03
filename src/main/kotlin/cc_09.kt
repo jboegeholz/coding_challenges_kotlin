@@ -8,6 +8,12 @@
 
  */
 
-fun main(args: Array<String>) {
-
+fun firstReverse(s: String): String {
+    if (s.length == 1) {
+        return s
+    } else if (s.length == 2) {
+        return "" + s[1] + s[0]
+    } else {
+        return ""
+    }
 }
