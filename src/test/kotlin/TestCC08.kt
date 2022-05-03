@@ -27,27 +27,27 @@ private fun getListOfPrimes(n: Int): Any {
     // Zahl j = i*k ist. Der kleinste Primfaktor einer zusammengesetzten Zahl j kann nicht größer
     // als die Quadratwurzel von j <= n sein.
     val sqrtOfN = floor(sqrt(n.toDouble())).toInt()
-    for (i in 2..sqrtOfN) {
-        if(!gestrichen[i]) {
-            // i ist prim, gib i aus...
-            println(i)
-            // ...und streiche seine Vielfachen, beginnend mit i*i
-            // (denn k*i mit k<i wurde schon als Vielfaches von k gestrichen)
-            for j = i*i to N step i do
-                gestrichen[j] = true
-            end
-            end if
-                end
-        }
-    }
-
-
-    // Gib die Primzahlen größer als Wurzel(n) aus - also die, die noch nicht gestrichen wurden
-    for i = sqrt(N)+1 to N do
-        if not gestrichen[i] then
-                // i ist prim, gib i aus
-                print i; ", ";
-    end if
-        end
+//    for (i in 2..sqrtOfN) {
+//        if(!gestrichen[i]) {
+//            // i ist prim, gib i aus...
+//            println(i)
+//            // ...und streiche seine Vielfachen, beginnend mit i*i
+//            // (denn k*i mit k<i wurde schon als Vielfaches von k gestrichen)
+//            for j = i*i to N step i do
+//                gestrichen[j] = true
+//            end
+//            end if
+//                end
+//        }
+//    }
+//
+//
+//    // Gib die Primzahlen größer als Wurzel(n) aus - also die, die noch nicht gestrichen wurden
+//    for i = sqrt(N)+1 to N do
+//        if not gestrichen[i] then
+//                // i ist prim, gib i aus
+//                print i; ", ";
+//    end if
+//        end
     return listOf(1)
 }
