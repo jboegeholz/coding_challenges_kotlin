@@ -19,4 +19,9 @@ internal class TestCC09 {
         val reversed: String = firstReverse("abc")
         assertEquals("cba", reversed)
     }
+    @Test
+    fun testFirstReverseForChars() {
+        val reversed: String = firstReverse("abcd")
+        assertEquals("dcba", reversed)
+    }
 }
