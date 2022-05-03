@@ -9,11 +9,13 @@
  */
 
 fun firstReverse(s: String): String {
-    if (s.length == 1) {
-        return s
+    return if (s.length == 1) {
+        s
     } else if (s.length == 2) {
-        return "" + s[1] + s[0]
+        "" + s[1] + s[0]
+    } else if (s.length == 3) {
+        "" + s[2] + s[1] + s[0]
     } else {
-        return ""
+        ""
     }
 }
