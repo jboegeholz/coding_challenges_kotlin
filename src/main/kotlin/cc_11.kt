@@ -6,6 +6,6 @@
 
  */
 
-fun main(args: Array<String>) {
-
+fun alphabetSoup(input: String): String {
+    return "a"
 }
