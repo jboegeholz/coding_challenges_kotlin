@@ -17,4 +17,9 @@ internal class TestCC11 {
         val ret = alphabetSoup("ba")
         assertEquals("ab", ret)
     }
+    @Test
+    fun testAlphabetSoupTstData() {
+        val ret = alphabetSoup("helloworld")
+        assertEquals("dehllloorw", ret)
+    }
 }

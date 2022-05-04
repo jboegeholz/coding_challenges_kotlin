@@ -7,5 +7,7 @@
  */
 
 fun alphabetSoup(input: String): String {
-    return "a"
+    val chars: List<Char> = input.toList()
+    return String(chars.sorted().toCharArray())
+
 }
