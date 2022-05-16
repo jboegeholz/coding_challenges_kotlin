@@ -9,5 +9,5 @@
 fun convertTime(timeInMinutes: Int): String {
     val hours = timeInMinutes / 60
     val minutes = timeInMinutes % 60
-    return hours.toString() + ":" + minutes.toString().padStart(2, '0')
+    return "${hours.toString()}:${minutes.toString().padStart(2, '0')}"
 }
