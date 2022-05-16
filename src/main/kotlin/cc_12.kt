@@ -7,6 +7,12 @@
 
  */
 
-fun main(args: Array<String>) {
+fun simpleAdd(number: Int): Int {
+
+    var result = 0
+    for (i in number downTo 0) {
+        result += i
+    }
+    return result
 
 }
