@@ -6,6 +6,8 @@
     Separate the number of hours and minutes with a colon.
  */
 
-fun main(args: Array<String>) {
-
+fun convertTime(timeInMinutes: Int): String {
+    val hours = timeInMinutes / 60
+    val minutes = timeInMinutes % 60
+    return hours.toString() + ":" + minutes.toString().padStart(2, '0')
 }
